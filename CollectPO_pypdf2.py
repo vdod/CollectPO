@@ -8,6 +8,7 @@ srcfolder = r"."
 #srcfolder = r"C:\Users\Aaron\Dropbox\翻譯部文件\01說明文件\TRL\2013-10Oct".decode('utf-8')
 
 #fo 是等一下要用的檔案名稱
+# ".txt" 到底前面要不要加u
 fo = os.path.basename(os.path.abspath(srcfolder)) + u".txt"
 
 #從 RegexBuddy 來的
