@@ -4,8 +4,8 @@ from time import time
 t = time()
 out = ""
 #srcfolder 希望能做成可以選擇的
-#srcfolder = r"."
-srcfolder = r"C:\Users\Aaron\Dropbox\翻譯部文件\01說明文件\TRL\2013-10Oct".decode('utf-8')
+srcfolder = r"."
+#srcfolder = r"C:\Users\Aaron\Dropbox\翻譯部文件\01說明文件\TRL\2013-10Oct".decode('utf-8')
 
 #fo 是等一下要用的檔案名稱
 fo = os.path.basename(os.path.abspath(srcfolder)) + u".txt"
@@ -31,7 +31,7 @@ def getPDFContent(path):
 
 
 #跑目錄下所有檔案
-for a, b, c in os.walk(srcfolder):
+for a, b, c in os.walk(srcfolder.decode('utf-8')):
     for cs in c:
         filename = os.path.join(a, cs)
         if filename.endswith(".pdf"):
